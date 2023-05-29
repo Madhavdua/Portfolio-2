@@ -2,14 +2,15 @@ let w= screen.width;
 
 
 let bar=document.getElementsByClassName('bar')
-
-if(w<=750){
-    document.getElementById("ham").innerHTML="";  
-}
+let navLinks=document.getElementsByClassName("nav-links");
 
 function burger(){
 document.getElementById("menu").classList.toggle("opened");
-document.getElementById("navItems").classList.toggle("change");
+
+for(let i=0; i<navLinks.length; i++){
+    navLinks[i].classList.toggle('change');
+}
+
 for(let i=0; i<bar.length; i++){
     bar[i].classList.toggle('bg-dark')
 }
@@ -19,7 +20,7 @@ for(let i=0; i<bar.length; i++){
 let circle=document.getElementById('blue-circle');
 
 let color=["red","blue","green","yellow","blue","black"]
-{w>750 && setInterval(() => {
+{setInterval(() => {
     let c=Math.random()*5;
     c=Math.floor(c);
     circle.style.color=`${color[c]}`;

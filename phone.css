@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+#ham{
+    display: flex;
+}
 
 nav {
     min-height: 50px;
@@ -22,9 +25,14 @@ nav {
 }
 
 .navitems {
-    opacity: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
+.nav-links{
+    display: none;
+}
+
 
 #navItems {
     padding: 0;
@@ -35,7 +43,7 @@ nav {
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
 }
 
 .bg-dark {
@@ -70,14 +78,14 @@ nav {
 .change {
     height: auto;
     position: relative;
-    margin: 0px;
-    /* padding-left: 50px; */
+    margin:1vw;
     padding-right: auto;
     display: flex;
+
     flex-direction: column;
     transition: .2s ease;
     opacity: 1;
-    /* align-items: center; */
+    align-items: center;
 
 }
 

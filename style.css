@@ -107,7 +107,7 @@ nav>.navName>p {
 
 /* Additional Section Styles */
 
-#additional .container {
+#additional {
     width: 100%;
     display: flex;
     margin-left: auto;
@@ -127,13 +127,27 @@ nav>.navName>p {
     display: flex;
     flex-direction: column;
     min-height: 50vh;
-    width: 40vw;
+    width: 45vw;
 }
 
 .section-left {
     font-size: 6vh;
     padding: 0vh 4vh;
     font-family: 'Poppins', sans-serif;
+}
+
+.together{
+    margin-top: auto;
+}
+.resume{
+    margin-left: 2vw;
+}
+.resume > button{
+    margin: 0;
+}
+.resume > button >a{
+    background-color: rgb(205, 81, 102);
+    color:black
 }
 #colored-part{
     display: inline;
@@ -166,10 +180,6 @@ nav>.navName>p {
 }
 
 
-
-.social-icons {
-    margin-top: auto;
-}
 .social-icons>a:hover{
     transform: translateY(-3px);
 }
