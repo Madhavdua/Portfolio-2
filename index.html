@@ -36,10 +36,10 @@
                 </div>
             </div>
             <div id="navItems" class="navitems">
-                <p><a  class="nav-links" href="#additional">Home</a></p>
-                <p><a  class="nav-links" href="#skills">Skills</a></p>
-                <p><a  class="nav-links" href="#projects-id">Projects</a></p>
-                <p><a  class="nav-links" href="#about-me">About</a></p>
+                <p><a class="nav-links" href="#additional">Home</a></p>
+                <p><a class="nav-links" href="#skills">Skills</a></p>
+                <p><a class="nav-links" href="#projects-id">Projects</a></p>
+                <p><a class="nav-links" href="#about-me">About</a></p>
                 <!-- <p><a target="_blank" href="#contact">Contact</a></p> -->
             </div>
 
@@ -125,113 +125,19 @@
                 <h2>Projects</h2>
             </div>
             <div class="project unload">
-                <div class="project-card">
-                    <img src="./Images/code-dev-black.png" width="100px" alt="Project Image">
-                    <h3 class="project-title">Code Dev</h3>
-                </div>
-                <div class="project-details">
-                    <div class="projects-links" style="display: flex; justify-content: space-between;">
-                        <button><a target="_blank" href="https://github.com/Madhavdua/CodeDev"><i
-                                    class="fab fa-github"></i>
-                            </a></button>
-                        <button><a target="_blank" href="https://code-dev-3e10e.web.app/#/" lass="button">View
-                                project</a></button>
-                    </div>
-                    <div class="project-techs" style="display: flex; justify-content: space-between;">
-                        <img src="./Images/firebase.png" width="35px">
-                        <img src="./Images/react crop.png" width="35px">
-                        <img src="./Images/bootstrap.png" width="35px">
-                    </div>
+                <div id="slider-left" class="slider" onclick="sliderLeft()"> <img src="./Images/leftslider.png" width="30vw"></div>
 
+                <div class="card">
+                    <img class="proj-img" src='./Images/old-portfolio.png' alt="Project Image">
+                    <div class="card-buttons">
+                        <div class="title" id="proj-title">Code dev</div>
+                        <a target="_blank" href="" id="gitlink"><button><img src="./Images/github.png"></button></a>
+                        <a target="_blank" href="" id="viewlink"><button>View Project</button></a> 
+                    </div>
                 </div>
+
+                <div id="slider-right" class="slider" onclick="sliderRight()"> <img src="./Images/rightslider.png" width="30vw"></div>
             </div>
-            <div class="project unload">
-                <div class="project-card">
-                    <div class="image">
-                        <img src="./Images/google.png" width="100px" alt="Project Image">
-                    </div>
-                    <h3 class="project-title">Google 2.0</h3>
-                </div>
-                <div class="project-details">
-                    <div class="projects-links" style="display: flex; justify-content: space-between;">
-                        <button><a target="_blank" href="https://github.com/Madhavdua/Google2.0"><i
-                                    class="fab fa-github"></i>
-                            </a></button>
-                        <button><a target="_blank" href="https://clone-a46f7.web.app/" lass="button">View
-                                project</a></button>
-                    </div>
-                    <div class="project-techs" style="display: flex; justify-content: space-between;">
-                        <img src="./Images/react crop.png" width="35px">
-                        <img src="./Images/rapid-api.png" width="35px">
-                        <img src="./Images/bootstrap.png" width="35px">
-                    </div>
-
-                </div>
-            </div>
-            <div class="project unload">
-                <div class="project-card">
-                    <img src="./Images/profile-2.png" width="100px" alt="Project Image">
-                    <h3 class="project-title">Old Portfolio</h3>
-                </div>
-                <div class="project-details">
-                    <div class="projects-links" style="display: flex; justify-content: space-between;">
-                        <button><a target="_blank" href="https://github.com/Madhavdua/Portfolio-1"><i
-                                    class="fab fa-github"></i>
-                            </a></button>
-                        <button><a target="_blank" href="https://portfolio-1-23e14.web.app/" lass="button">View
-                                project</a></button>
-                    </div>
-                    <div class="project-techs" style="display: flex; justify-content: space-between;">
-                        <img src="./Images/html.png" width="35px">
-                        <img src="./Images/css.png" width="35px">
-                        <img src="./Images/js.png" width="35px">
-                    </div>
-
-                </div>
-            </div>
-            <div class="project unload">
-                <div class="project-card">
-                    <img src="./Images/apple-logo.png" width="100px" alt="Project Image">
-                    <h3 class="project-title">Apple Store</h3>
-                </div>
-                <div class="project-details">
-                    <div class="projects-links" style="display: flex; justify-content: space-between;">
-                        <button><a target="_blank" href="https://github.com/Madhavdua/apple"><i
-                                    class="fab fa-github"></i>
-                            </a></button>
-                        <button><a target="_blank" href="https://melodious-medovik-fec2d2.netlify.app"
-                                lass="button">View project</a></button>
-                    </div>
-                    <div class="project-techs" style="display: flex; justify-content: space-between;">
-                        <img src="./Images/html.png" width="35px">
-                        <img src="./Images/css.png" width="35px">
-                        <img src="./Images/js.png" width="35px">
-                    </div>
-
-                </div>
-            </div>
-            <div class="project unload">
-                <div class="project-card">
-                    <img src="./Images/music-player.png" width="100px" alt="Project Image">
-                    <h3 class="project-title">Music Player</h3>
-                </div>
-                <div class="project-details">
-                    <div class="projects-links" style="display: flex; justify-content: space-between;">
-                        <button><a target="_blank" href="https://github.com/Madhavdua/MusicPlayer"><i
-                                    class="fab fa-github"></i>
-                            </a></button>
-                        <button><a target="_blank" href="https://preeminent-cobbler-da494e.netlify.app/"
-                                lass="button">View project</a></button>
-                    </div>
-                    <div class="project-techs" style="display: flex; justify-content: space-between;">
-                        <img src="./Images/html.png" width="35px">
-                        <img src="./Images/css.png" width="35px">
-                        <img src="./Images/js.png" width="35px">
-                    </div>
-
-                </div>
-            </div>
-
         </section>
 
 
@@ -284,6 +190,7 @@
         });
     </script>
     <script src="./script.js"></script>
+    <script src="./slider.js"></script>
 </body>
 
 </html>

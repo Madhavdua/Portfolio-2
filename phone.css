@@ -6,13 +6,16 @@
 }
 #ham{
     display: flex;
+    font-size: 4vw;
 }
 
 nav {
-    min-height: 50px;
+    min-height: 38px;
     padding-top: 15px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
 }
 
 .position-absolute {
@@ -31,6 +34,7 @@ nav {
 }
 .nav-links{
     display: none;
+
 }
 
 
@@ -78,7 +82,7 @@ nav {
 .change {
     height: auto;
     position: relative;
-    margin:1vw;
+    margin:3vw;
     padding-right: auto;
     display: flex;
 
@@ -107,15 +111,13 @@ nav {
 
 
 /* MAin Page start here */
-
-
-#additional .container {
-    max-width: 90%;
+#additional{
+    margin: 4vw auto;
+    justify-content: center;
 }
-
 #additional .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
     padding: 0;
@@ -128,8 +130,8 @@ nav {
     align-items: center;
 }
 #additional .section-left {
-    min-height: 40vh;
-    width: 40vw;
+    min-height: 30vh;
+    width: 45vw;
     height: 100%;
     max-width: 45vw;
     margin: 0;
@@ -149,7 +151,9 @@ nav {
     text-align: justify;
     color: #777;
 }
-
+.together{
+    margin-top: 4vw;
+}
 #connect {
     background-color: black;
 }
@@ -173,25 +177,24 @@ nav {
     margin: 0 2px;
 }
 
-.project {
-    width: 45%;
+/* project section */
+.card-buttons button{
+    font-size: 2vw;
+    margin: .5vw;
+    padding: .5vw;
 }
-
-
-.project-card img {
-    width: 60px;
-    height: 60px;
-}
-
-.project-techs img {
-    width: 25px;
-    height: 25px;
-}
-
+.card-buttons button img{
+    width: 4vw;
+    height: 4vw;
+  }
 
 #skills {
     justify-content: center;
-    padding: 15vw 3vw;
+    padding: 12vw 4vw;
+}
+h2{
+
+    text-align: center;
 }
 .head{
     width: 100%;
