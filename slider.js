@@ -6,35 +6,29 @@ const proj_title = document.getElementById('proj-title');
 
 let projects = [
     {
+        title: "Classroom 2.0",
+        image: "./Images/Classroom-ss.png",
+        github: "https://github.com/Madhavdua/CodeDev",
+        view: "https://classroom2-0.vercel.app/"
+    },
+    {
         title: "Code Dev",
         image: "./Images/code-dev.png",
         github: "https://github.com/Madhavdua/CodeDev",
         view: "https://code-dev-3e10e.web.app/#/"
     },
     {
-        title: "Google",
+        title: "Google 2.0",
         image: "./Images/google2.0.png",
         github: "https://github.com/Madhavdua/Google2.0",
         view: "https://clone-a46f7.web.app/"
-    },
-    {
-        title: "Old Portfolio",
-        image: "./Images/old-portfolio.png",
-        github: "https://github.com/Madhavdua/Portfolio-1",
-        view: "https://portfolio-1-23e14.web.app/"
     },
     {
         title: "Apple Store",
         image: "./Images/apple.png",
         github: "https://github.com/Madhavdua/apple",
         view: "https://melodious-medovik-fec2d2.netlify.app/"
-    },
-    {
-        title: "Music player",
-        image: "./Images/music.png",
-        github: "https://github.com/Madhavdua/MusicPlayer",
-        view: "https://preeminent-cobbler-da494e.netlify.app/"
-    },
+    }
 ]
 
 
