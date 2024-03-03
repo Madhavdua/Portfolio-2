@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 * {
     margin: 0 0;
     padding: 0 0;
 }
-section{
+
+section {
     margin: 0;
     padding: 0;
     border: none;
 }
-.disable{
+
+.disable {
     opacity: 0;
 }
+
 .unload {
     opacity: 0;
     filter: blur(15px);
     transition: all 1s;
 }
-.load{
+
+.load {
     opacity: 1;
     filter: blur(0px);
 }
@@ -26,24 +31,26 @@ body {
     overflow-x: hidden;
     height: auto;
 }
-.head{
+
+.head {
     width: 100%;
-    
+
 }
 
-.bg-image{
-    background-image: url('./Images/bg-image-3.jpg');
-    height: 100vh;
+.bg-image {
+    /* background-image: url('./Images/bg-image-3.jpg');
+    background-color: black; */
+    height: auto;
     width: 100vw;
     position: fixed;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     z-index: -1;
     filter: blur(8px);
     /* -webkit-backdrop-filter: blur(8px); */
 }
 
-.wesite-content{
+.wesite-content {
     background-color: black;
     color: white;
     position: absolute;
@@ -53,7 +60,8 @@ body {
     right: 2vw;
     z-index: 100;
 }
-section{
+
+section {
     background-color: black;
     color: white;
 }
@@ -65,7 +73,7 @@ nav {
 }
 
 nav>.navitems {
-    
+
     display: flex;
     padding-top: 8px;
     margin-right: 3vw;
@@ -81,7 +89,7 @@ nav>.navitems>p>a {
 
 nav>.navitems>p:hover {
     transform: scale(1.1)
-    /* transform: translateY(-5px); */
+        /* transform: translateY(-5px); */
 }
 
 .navline>hr {
@@ -94,6 +102,7 @@ nav>.navName {
     font-size: 25px;
     font-weight: 900;
 }
+
 /* nav > .navName:hover{
     transform: scale(1.3);
 } */
@@ -138,27 +147,33 @@ nav>.navName>p {
     font-family: 'Poppins', sans-serif;
 }
 
-.together{
+.together {
     margin-top: auto;
 }
-.resume{
+
+.resume {
     margin-left: 2vw;
 }
-.resume > button{
+
+.resume>button {
     margin: 0;
 }
-.resume > button >a{
+
+.resume>button>a {
     background-color: rgb(205, 81, 102);
-    color:black
+    color: black
 }
-#colored-part{
+
+#colored-part {
     display: inline;
-    color:purple;
+    color: purple;
 }
-#element{
-    color:rgb(205, 81, 102);
-    
+
+#element {
+    color: rgb(205, 81, 102);
+
 }
+
 #additional .section-right {
     width: 40vw;
     display: flex;
@@ -182,7 +197,7 @@ nav>.navName>p {
 }
 
 
-.social-icons>a:hover{
+.social-icons>a:hover {
     transform: translateY(-3px);
 }
 
@@ -197,197 +212,191 @@ nav>.navName>p {
 }
 
 
-
-
 /* for project */
-
-
-
-.project {
+#projects-id {
+    padding: 5vh 5vh;
+}
+.project-card {
+    min-width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: space-around;
+    padding: 2vw;
+    position: relative;
+    margin: 2vh auto;
 }
 
-.card {
-      /* background-color: rgb(53, 50, 50); */
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
 
-  .card img {
-    width: 100%;
-    height: 60vh; /* Set the desired height for the image */
-    /* object-fit: cover; */
-    border-radius: 8px;
-    transition: 1s all ease;
-  }
+.project-name {
+    text-decoration: none;
+    font-size: 10vh;
+    z-index: 2;
+    align-self: center;
+    position: absolute;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.project-name > a{
+    text-decoration: none;
+    color: purple;
+}
+.project-name-line{
+    width: 100px;
+    height: 5px;
+    background-color: purple;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    animation: underline infinite 2s alternate ease-out ;
+}
 
-  .card-buttons {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-  }
-  .card-buttons .title{
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 4vw;
-    margin-right: auto;
-    font-weight: bold;
-  }
-  .card-buttons button{
-      display: inline-block;
-      margin: 10px;
-      /* padding: 4px; */
-      background-color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      /* text-transform: uppercase; */
-      border-radius: 15%;
-      cursor: pointer;
-      width: 40px;
-    height: 40px;
-      transition: background-color 0.3s ease;
-  }
-  .card-buttons button img{
-    width: 40px;
-    height: 40px;
-  }
+@keyframes underline {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
 
-  .card-buttons button:hover {
-    background-color: black;
-    color: white;
-  }
-  .slider{
-    margin: auto 10px;
-  }
- 
-
-
+.project-img {
+    filter: blur(15px);
+    z-index: 1;
+    width: 80vw;
+    height: 40vw;
+}
 
 
 /* for button */
-button{
+button {
     border: none;
     margin: 2vh 2px;
     background-color: black;
 }
-      button a {
-        display: inline-block;
-        background-color: black;
-        padding: 5px 10px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-    }
-    
-    button a:hover {
-        color: black;
-        background-color: white;
-    }
-    
-    
-    
-    
-    /* for skills */
-    
-    
-    #skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: 5vh 5vh;
-    }
-    .skill :hover{
-        transform: translateY(-10px);
-    }
-    
-    .skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 3vh 2vh 1vh 2vh;
-    }
-    
-    .skill img {
-        width: 60px;
-        height: 60px;
-        margin: auto 3vh;
-        margin-bottom: 10px;
-        border-radius: 20%;
-    }
-    
-    .skill h3 {
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    /* for button */
-    
-    
-    
-    /* CSS for about me */
-    #about-me {
-        padding: 20px;
-        padding : 5vh;
-    }
-    
-    #about-me h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    .bio {
-        display: flex;
-        align-items: center;
-        
-    }
-    
-    .bio img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+
+button a {
+    display: inline-block;
+    background-color: black;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+/* for skills */
+
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5vh 5vh;
+}
+
+.skill :hover {
+    transform: translateY(-10px);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 2vh 1vh 2vh;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin: auto 3vh;
+    margin-bottom: 10px;
+    border-radius: 20%;
+}
+
+.skill h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* for button */
+
+
+
+/* CSS for about me */
+#about-me {
+    padding: 20px;
+    padding: 5vh;
+}
+
+#about-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+
+}
+
+.bio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-right: 20px;
-  }
-  
-  .bio p {
-      font-size: 16px;
-      line-height: 1.5;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:950px) {
+    #additional .main{
+        padding: 10px;
     }
-    .content{
-        font-size: 20px;
-        font-weight: 500;
-    }  
-    @media screen and (max-width:900px) {
-        .section-left {
-            font-size: 5vw;
-            padding: 0vh;
-            margin: 0;
-        }
+    .project-name {
+        font-size: 7vw;
     }
+    .section-left {
+        font-size: 5vw;
+        padding: 0vh;
+        margin: 0;
+    }
+}
+
 /* for footer */
-    .footer {
-        background-color: black;
-        padding: 20px;
-        text-align: center;
-        color: white;
-      }
-      
-      .footer p {
-        margin: 2vw;
-      }
-      
-      .footer a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-      }
+.footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin: 2vw;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
