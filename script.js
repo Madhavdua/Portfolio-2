@@ -46,20 +46,3 @@ const secs=document.getElementsByClassName('unload');
 for(let i=0; i<secs.length; i++){
     observer.observe(secs[i])
 }
-
-// for projects name underline only
-// const observerProject=new IntersectionObserver((e)=>{
-//     e.forEach((entry)=>{
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('project-name-under');
-//         }
-//         else{
-//             entry.target.classList.remove('project-name-under');
-//         }
-//     })
-// })
-
-// const projs=document.getElementsByClassName('project-name');
-// for(let i=0; i<projs.length; i++){
-//     observerProject.observe(projs[i])
-// }

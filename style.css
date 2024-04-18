@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0 0;
     padding: 0 0;
+    font-family: "Questrial", sans-serif;
 }
 
 section {
@@ -38,9 +41,9 @@ body {
 }
 
 .bg-image {
-    /* background-image: url('./Images/bg-image-3.jpg');
-    background-color: black; */
-    height: auto;
+    background-image: url('./Images/bg-image-3.jpg');
+    background-color: black;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     background-repeat: no-repeat;
@@ -103,14 +106,10 @@ nav>.navName {
     font-weight: 900;
 }
 
-/* nav > .navName:hover{
-    transform: scale(1.3);
-} */
 nav>.navName>p {
     color: aqua;
     transform: scale(1.7, 1.7);
 }
-
 .complete {
     display: flex;
     flex-direction: column;
@@ -144,7 +143,7 @@ nav>.navName>p {
 .section-left {
     font-size: 6vh;
     padding: 0vh 4vh;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 .together {
@@ -171,7 +170,7 @@ nav>.navName>p {
 
 #element {
     color: rgb(205, 81, 102);
-
+    font-family: "Poppins", sans-serif;
 }
 
 #additional .section-right {
@@ -216,6 +215,7 @@ nav>.navName>p {
 #projects-id {
     padding: 5vh 5vh;
 }
+
 .project-card {
     min-width: 100%;
     width: auto;
@@ -234,29 +234,32 @@ nav>.navName>p {
     z-index: 2;
     align-self: center;
     position: absolute;
-    font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.project-name > a{
+
+.project-name>a {
+    font-family: "Madimi One", sans-serif;
     text-decoration: none;
     color: purple;
 }
-.project-name-line{
+
+.project-name-line {
     width: 100px;
     height: 5px;
     background-color: purple;
     border: none;
     position: absolute;
     bottom: 0;
-    animation: underline infinite 2s alternate ease-out ;
+    animation: underline infinite 2s alternate ease-out;
 }
 
 @keyframes underline {
-    from{
+    from {
         width: 100%;
     }
-    to{
+
+    to {
         width: 0%;
     }
 }
@@ -266,6 +269,69 @@ nav>.navName>p {
     z-index: 1;
     width: 80vw;
     height: 40vw;
+}
+
+/* for contact-form */
+#contact-me {
+    padding: 20px;
+    padding: 5vh;
+}
+
+#contact-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-box>video,
+.contact-me {
+    width: 40vw;
+}
+form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    border-radius: 4px;
+}
+.form-comp{
+    margin: 15px;
+    outline: none;
+}
+.ip-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 150px;
+}
+textarea{
+    resize: none;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 300px;
+
+}
+#send-req{
+    cursor: pointer;
+    width: 100px;
+    border: none;
 }
 
 
@@ -367,19 +433,28 @@ button a:hover {
 .content {
     font-size: 20px;
     font-weight: 500;
+    font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width:950px) {
-    #additional .main{
+    #additional .main {
         padding: 10px;
     }
+
     .project-name {
         font-size: 7vw;
     }
+
     .section-left {
         font-size: 5vw;
         padding: 0vh;
         margin: 0;
+    }
+    input{
+        width: 220px;
+    }
+    textarea{
+        width: 220px;
     }
 }
 

@@ -15,11 +15,35 @@
     <link rel="stylesheet" media="screen and (max-width: 750px)" target="_blank" href="phone.css">
     <link target="_blank" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
         rel="stylesheet">
+
+    <!-- ********** SCRIPT FOR CONTACT FORM / EMAIL.JS***** -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "lM5LvTtiMzchFBNIY",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const params = {
+                    from_name: document.getElementById("from_name").value,
+                    from_mail: document.getElementById("from_mail").value,
+                    message: document.getElementById("message").value,
+                }
+                emailjs.send("service_cs55qyq", "template_16w1vzp", params).then((res) => {
+                    alert("Madhav has been notified.")
+                })
+            });
+        }
+    </script>
 </head>
 
 <body>
     <div class="bg-image">
-
     </div>
 
 
@@ -72,8 +96,8 @@
                         </div>
                         <div class="resume">
                             <button>
-                                <a href="https://drive.google.com/drive/folders/1ZeLevlRCI9UGTTAwUSOl8YwYwzjWg21x?usp=sharing" target="_blank"><i
-                                        class="fa-solid fa-cloud-arrow-down"></i> Resume</a>
+                                <a href="https://drive.google.com/drive/folders/1ZeLevlRCI9UGTTAwUSOl8YwYwzjWg21x?usp=sharing"
+                                    target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i> Resume</a>
                             </button>
                         </div>
                     </div>
@@ -120,25 +144,42 @@
             <div class="bio unload">
                 <img src="./Images/profile.png" alt="Profile Picture">
                 <div class="content">
-                    <p>Hi, I'm Madhav Dua. I am a dedicated and aspiring software engineer currently pursuing a
-                        Bachelor's degree in Information Technology (B.Tech IT) from COER (College of
-                        Engineering Roorkee),
-                        graduating in 2025.
+                    <p>I'm Madhav Dua, an aspiring MERN stack developer fueled by a passion for crafting dynamic web applications. Currently pursuing a Bachelor's degree in Information Technology (B.Tech IT) at COER, graduating in 2025, I'm constantly honing my skills and expanding my knowledge base.
                     </p>
                     <p>
-                        With dedication and perseverance, I have earned LeetCode Annual Badge 2023  with experience of solving over 400 coding
-                        questions on LeetCode, a renowned platform for algorithmic problem-solving.
+                        I also excel at problem-solving, evidenced by my LeetCode ranking in the top 20%. This translates to a strong ability to tackle complex algorithms and data structures.
                     </p>
                     <p>
-                        Furthermore,i have achieved an impressive rating on GFG and 
-                        HackerRank.
+                        Beyond technical expertise, I value teamwork and believe in effective collaboration. I'm eager to contribute my skills and passion to innovative projects in a fast-paced environment. Let's connect and discuss how I can bring value to your team!
                     </p>
                 </div>
             </div>
         </section>
+        <section id="contact-me">
+            <h2>Let's Connect</h2>
+            <div class="contact-box">
+
+                <form id="contact-form">
+                    <!-- To simplify the tutorial, the value is static. -->
+                    <div class="ip-box">
+                        <input type="text" placeholder="Name" class="form-comp" id="from_name" name="user_name" required>
+                        <input type="email" placeholder="Email" class="form-comp" id="from_mail" name="user_email" required>
+
+                    </div>
+                    <textarea name="message" rows="4" placeholder="Your message" class="form-comp" id="message" required></textarea>
+                    <input type="submit" class="form-comp" id="send-req" value="Send">
+
+                </form>
+                <video width="100%" autoplay loop>
+                    <source src="./Images/globe3.mp4">
+                </video>
+            </div>
+        </section>
         <footer class="footer">
             <hr>
-            <p>Thank you for visiting my portfolio website. Let's get in touch!</p>
+            <p>Thank you for visiting my portfolio website.
+                <!-- Let's get in touch! -->
+            </p>
             <p>Email: madhavdua26@gmail.com</p>
         </footer>
 
